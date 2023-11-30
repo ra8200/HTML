@@ -1,0 +1,12 @@
+/* Inline CSS for demonstration */
+body { 
+    font-family: Arial, sans-serif; 
+}
+
+.important-text { 
+    color: red; 
+}
+
+#main-header { 
+    background-color: #f2f2f2; 
+}

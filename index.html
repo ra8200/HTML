@@ -1,0 +1,96 @@
+<!DOCTYPE html> <!-- Defines the document type and HTML version, always the first line in your HTML documents -->
+<html lang="en"> <!-- The root element of an HTML document, 'lang' attribute specifies the language -->
+
+    <head> <!-- Contains meta-information about the document -->
+        <meta charset="UTF-8"> <!-- Defines the character encoding for the document -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Sets the viewport to ensure the site is responsive -->
+        <title>Sample HTML Page</title> <!-- Specifies the title of the document seen in the browser's title bar or tab -->
+        <link rel="stylesheet" href="./assets/css/style.css"> <!-- Links an external CSS file to the document -->
+    </head>
+
+    <body> <!-- Contains all the content of an HTML document, such as text, hyperlinks, images, tables, lists, etc. -->
+
+        <header id="main-header"> <!-- Represents the header of the document or a section and typically contains introductory content or navigational links -->
+
+            <nav>
+                <h1>Welcome to My Website</h1> <!-- Represents the most important heading -->
+
+                <div>  <!-- A generic container for flow content, which by itself does not represent anything -->
+                    <nav> <!-- Defines a set of navigation links -->
+                        <ul> <!-- Represents an unordered list of items -->
+                            <li><a href="#home">Home</a></li> <!-- 'li' represents a list item; 'a' defines a hyperlink -->
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </nav> 
+                </div>
+            </nav>
+        </header>
+
+        <div> 
+            <section> <!-- Defines a section in a document, typically with a theme or topic -->
+                <article> <!-- Defines independent, self-contained content -->
+                    <h2>HTML Cheat Sheet</h2> <!-- Represents a section heading -->
+
+                    <p> <!-- Represents a paragraph -->
+                        This is a paragraph with some <strong class="important-text">important text</strong> <!-- 'strong' indicates importance, seriousness, or urgency -->
+                        and some <em>emphasized text</em>. <br> <!-- 'em' indicates emphasized text; 'br' inserts a line break -->
+                        New line here.
+                    </p>
+
+                    <img src="./assets/image-1.png" alt="content"> <!-- Embeds an image into the document -->
+                    
+                    <hr> <!-- Represents a thematic break between paragraph-level elements -->
+                </article>
+            </section>
+        </div>
+
+        <div> 
+            <aside> <!-- Defines some content aside from the content it is placed in (like a sidebar) -->
+
+                <h3>Side Information</h3> <!-- Represents a section heading, less important than h2 -->
+
+                <p>This is some side information.</p> <!-- Represents a paragraph -->
+            </aside>
+        </div>
+        
+        <div> 
+            <table> <!-- Represents tabular data -->
+                <tr> <!-- Represents a row in a table -->
+                    <th>Tag</th> <!-- Represents a header cell in a table -->
+                    <th>Description</th>
+                </tr>
+
+                <tr> <!-- Table row -->
+                    <td>&lt;p&gt;</td> <!-- Represents a cell in a table containing data -->
+                    <td>Paragraph</td>
+                </tr>
+
+                <tr> <!-- Table row -->
+                    <td>&lt;img&gt;</td>
+                    <td>Image</td>
+                </tr>
+            </table>
+        </div>
+
+        <div>
+            <form> <!-- Represents a document section that contains interactive controls to submit information to a web server -->
+
+                <label for="name">Name:</label> <!-- Represents a caption for an item in a user interface -->
+
+                <input type="text" id="name" name="name"> <!-- Represents a typed data field allowing the user to input data -->
+
+                <label for="message">Message:</label>
+
+                <textarea id="message" name="message"></textarea> <!-- Represents a multi-line plain-text editing control -->
+
+                <button type="submit">Submit</button> <!-- Represents a clickable button -->
+            </form>
+        </div>
+
+        <footer> <!-- Represents the footer of a document or a section, typically containing authorship information, related documents, copyright, and contact information -->
+            <p>Copyright © 2023</p>
+        </footer>
+    </body>
+    <script src="script.js"></script> <!-- Links an external JavaScript file to the document -->
+</html>
